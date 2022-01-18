@@ -1,0 +1,12 @@
+apply plugin: 'java'
+dependencies {
+compile files('../dl/dist/hr-dl-1.0.jar','../bl/build/libs/bl.jar','../common/dist/hr-common.jar','c:/itext7/*.jar')
+compile fileTree(include:'*.jar',dir:'libs')
+}
+sourceSets{
+main{
+resources{
+srcDir 'images'
+}
+}
+}
